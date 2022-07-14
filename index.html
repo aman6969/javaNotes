@@ -1,0 +1,312 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animated Icons</title>
+    <!-- CSS only -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<style>
+    #chain, #battery, #hourglass {
+        font-size:50px;
+    }
+</style>
+
+</head>
+<body>
+    <div id="chain" class="fa"></div>
+
+    <br></br>
+
+    <div id="battery" class="fa"></div>
+
+    <br></br>
+
+    <div id="hourglass" class="fa"></div>
+    <script>
+        function breakChain(){
+            let chain = document.getElementById('chain');
+            chain.innerHTML="&#xf0c1";
+            setTimeout(function(){
+                chain.innerHTML="&#xf127;";
+            }, 1000);
+        }
+        // Call animation
+        breakChain();
+//Animate every 2 sec.
+setInterval(breakChain,2000);
+//Battery charge animation
+function chargeBattery(){
+    let battery = document.getElementById('battrey');
+    battery.innerHTML = "&#xf244;";
+    setTimeout(function(){
+         battery.innerHTML = "&#xf343;";
+    }, 1000);
+    setTimeout(function(){
+         battery.innerHTML = "&#xf342;";
+    }, 2000);
+    setTimeout(function(){
+         battery.innerHTML = "&#xf341;";
+    }, 3000);
+    setTimeout(function(){
+         battery.innerHTML = "&#xf340;";
+    }, 4000);
+}
+//Run Animation
+chargeBattery();
+//Run Animation Every 5 sec.
+setInterval(chargeBattery,5000);
+//Hourglass Tip Animation
+function hourglassTip(){
+    let hourglass = 
+    document.getElementById('hourglass');
+    hourglass.innerHTML="&#xf251;";
+    setTimeout(function(){
+        hourglass.innerHTML = "&#xf252;";
+    },1000);
+    setTimeout(function(){
+        hourglass.innerHTML="&#xf253";
+    },2000);
+}
+//run animation
+hourglassTip();
+//Run Animation every 3 sec.
+setInterval(hourglassTip,3000);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- CDN for Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Java Notes</title>
+</head>
+
+<body>
+    <div class="Java-Poster">
+        <img src="Images/Java_Poster-img.png" alt="Java-Poster-Images" height="250px">
+    </div>
+
+    <div class="About-java">
+        <h2 class="Abt-java Output1"> About Java </h2>
+        <div class="row">
+            <div class="col-6 AbtJava">
+                <i class="bi bi-record-fill"></i> Java is Object Oriented. However, it is not considered as pure
+                object-oriented as it provides support for primitive data types (like int, char, etc)
+
+            </div>
+            <div class="col-6 AbtJava">
+                <i class="bi bi-record-fill"></i> The Java codes are first compiled into byte code
+                (machine-independent code). Then the byte code runs on Java Virtual Machine (JVM) regardless of the
+                underlying architecture.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 AbtJava">
+                <i class="bi bi-record-fill"></i> When compared with C++, Java codes are generally more maintainable
+                because Java does not allow many things which may lead to bad/inefficient programming if used
+                incorrectly. For example, non-primitives are always references in Java. So we cannot pass large objects
+                (like we can do in C++) to functions, we always pass references in Java. One more example, since there
+                are no pointers, bad memory access is also not possible.
+            </div>
+        </div>
+
+        <div class="row simprog">
+            <div class="col-6 HWProgram">
+                <h3 class="h3sjp Output1"> <strong class="Sjp"> Simple Java Program </strong> </h3>
+                // A Java program to print "Hello World" <br>
+                public class GFG { <br>
+                public static void main(String args[]) { <br>
+                System.out.println("Hello World"); } } <br>
+
+            </div>
+            <div class="col-6 outputhw">
+                <span class="Output1"> Output : Hello World </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="var-data">
+        <h1 class="Output1"><u> Variables and DATA TYPE </u></h1>
+        Variable in Java is a data container that saves the data values during Java program execution. Every variable is
+        assigned a data type that designates the type and quantity of value it can hold. A variable is a memory location
+        name for the data. <br><br>
+
+        <p class="varinit"> A variable is a name given to a memory location. It is the basic unit of storage in a
+            program.</p>
+        <ol class="varpoints">
+            <li>
+                The value stored in a variable can be changed during program execution.
+            </li>
+            <li>
+                A variable is only a name given to a memory location. All the operations done on the variable affect
+                that memory location.
+            </li>
+            <li>
+                In Java, all variables must be declared before use.
+            </li>
+        </ol>
+
+        <h3>How to initialize variables?</h3> <br>
+        <p class="varinit"> It can be perceived with the help of 3 components that are as follows:</p>
+        <ol class="varpoints">
+            <li><span class="dark-tittle"> datatype:</span> Type of data that can be stored in this variable.</li>
+            <li><span class="dark-tittle">variable_name:</span> Name given to the variable.</li>
+            <li><span class="dark-tittle">value:</span> It is the initial value stored in the variable.</li>
+        </ol>
+
+        <strong> <u>
+                <p class="varinit"> Code Implementation: </p> </strong></u>
+        <div class="col-6 outputhw">
+            <span class="Output1"> int variable = 007; </span>
+        </div>
+        <br>
+        <p class="varinit">Java has two categories in which data types are segregated.</p>
+        <ol class="varpoints">
+            <li><span class="dark-tittle"> Primitive Data Type:</span> such as boolean, char, int, short, byte, long,
+                float, and double</li>
+            <li><span class="dark-tittle">Non-Primitive Data Type or Object Data type:</span> such as String, Array,
+                etc.</li>
+        </ol>
+        <br>
+        <h2 class="Output1">Types Of Primitive Data Types</h2> <br>
+        <p class="varinit">Primitive data are only single values and have no special capabilities. <br> There are 8
+            primitive data types. They are depicted below in tabular format below as follows: </p>
+
+        <Table class="table-bordered table table-hover text-center var-table">
+            <thead class="table-header">
+                <tr>
+                    <td class="header-text">TYPE</td>
+                    <td class="header-text">DESCRIPTION</td>
+                    <td class="header-text">DEFAULT</td>
+                    <td class="header-text">SIZE</td>
+                    <td class="header-text">EXAMPLE LITERALS</td>
+                    <td class="header-text">RANGE OF VALUES</td>
+                </tr>
+            </thead>
+            <tbody class="var-table-body">
+                <tr>
+                    <td>boolean</td>
+                    <td>true or false</td>
+                    <td>false</td>
+                    <td>1 bit</td>
+                    <td>true,false</td>
+                    <td>true,false</td>
+                </tr>
+                <tr>
+                    <td>byte</td>
+                    <td>two's complement integer</td>
+                    <td>0</td>
+                    <td>8 bits</td>
+                    <td>1, 2, -3, 77, -90</td>
+                    <td>-128 to 127</td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>unicode character</td>
+                    <td>\u0000</td>
+                    <td>16 bits</td>
+                    <td>'a', 'b', 'c', '\u0041'</td>
+                    <td>character representation <br> of ASCII values 0 to 255</td>
+                </tr>
+                <tr>
+                    <td>short</td>
+                    <td>two's complement integer</td>
+                    <td>0</td>
+                    <td>16 bits</td>
+                    <td>1,2,-3,77,-90</td>
+                    <td>-32,768 to 32,767</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>two's complement integer</td>
+                    <td>0</td>
+                    <td>32 bits</td>
+                    <td>-2, -1, 0, 1, 2</td>
+                    <td>-2,147,483,648  to <br> 2,147,483,647 </td>
+                </tr>
+                <tr>
+                    <td>long</td>
+                    <td>two's complement integer</td>
+                    <td>0</td>
+                    <td>64 bits</td>
+                    <td>-2L, -1L, 0L, 1L, 2L</td>
+                    <td>-9,223,372,036,854,775,808  to <br> 9,223,372,036,854,775,807 </td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>IEEE 754 floating point</td>
+                    <td>0.0</td>
+                    <td>32 bits</td>
+                    <td>3.14f, 4.123f, 2.12f</td>
+                    <td>upto 7 decimals digits</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>IEEE 754 floating point</td>
+                    <td>0.0</td>
+                    <td>64 bits</td>
+                    <td>3.14d, 4.123d, 2.12d</td>
+                    <td>upto 16 decimals digits</td>
+                </tr>
+            </tbody>
+        </Table>
+            <br>
+        <h2 class="Output1"> Non-Primitive Data Type or Reference Data Types</h2> <br>
+        <p class="varinit">Some of the types are shown below: <br><span class="dark-tittle"> Note:</span>  we will study these in detail in future.</p>
+
+        <ul class="varpoints">
+            <li class="non-pr-dt"> Strings </li>
+            <li class="non-pr-dt"> class</li>
+            <li class="non-pr-dt"> object</li>
+            <li class="non-pr-dt"> Array</li>
+            <li class="non-pr-dt"> interface</li>
+        </ul>
+        <br>
+        <h2 class="Output1"> Type Casting </h2> <br>
+        <p class="varinit"> Code Implementation: </p> </strong></u>
+        <div class="col-12 type-cast">
+            <span class="Output1 dark-tittle"> Data-type variable = (data-type) variable;  </span>
+        </div>
+        <br>
+        <p class="varinit">Another Code Implementation for better understanding: </p> </strong></u>
+        <div class="col-12 type-cast1">
+            <span> public class Main { <br>
+                public static void main(String[] args) {  <br>
+                  double myDouble = 9.78d;   <br>
+                  int myInt = (int) myDouble; // Manual casting: double to int  <br>
+              
+                  System.out.println(myDouble);   // Outputs 9.78  <br>
+                  System.out.println(myInt);      // Outputs 9  
+                } 
+              }  </span>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
